@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.static('static'));
 
 app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
+    res.sendFile(resolve(__dirname, 'pages/index.html'));
 });
 
 app.use('/menu', require("./routes/menuRoute"));
